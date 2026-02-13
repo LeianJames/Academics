@@ -61,7 +61,11 @@ if start == "1":
                 score += 1
                 print(f"Points awarded: 1")
         
-        print()
+        # Automatically proceed to next problem
+        if i < 6:
+            print("Proceeding to next problem...\n")
+        else:
+            print()
     
     average_score = math.floor(score / total_problems)
     
