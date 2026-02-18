@@ -1,9 +1,6 @@
 # Academics
 My academic projects
 
-# MiniProjects
-
-
 If you create a new Python file and want to add it to your GitHub repository, you need to stage, commit, and push it just like any other change.
 
 1. git status --> Git will show your new untracked file under: Untracked files: newfile.py
