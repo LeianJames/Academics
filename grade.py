@@ -1,5 +1,5 @@
 from colorama import init, Fore , Style, Back
-from art import tprint, text2art, aprint
+from grade import tprint, text2art, aprint
 import pyinputplus as py
 
 init(autoreset=True)
@@ -7,12 +7,7 @@ init(autoreset=True)
 print (text2art("Welcome"))
 pasado = "Passed"
 failed = "Failed"
-
-try:
-    grade = int(input("Enter grade: "))
-except ValueError:
-    print("Invalid input ")
-    
+grade = (py.inputInt("Enter grade: "))
 
 if grade >= 75:
     print("Final Grade: ", Fore.GREEN + pasado)
