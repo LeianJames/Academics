@@ -7,7 +7,12 @@ init(autoreset=True)
 print (text2art("Welcome"))
 pasado = "Passed"
 failed = "Failed"
-grade = (py.inputInt("Enter grade: "))
+
+try:
+    grade = int(input("Enter grade: "))
+except ValueError:
+    print("Invalid input ")
+    
 
 if grade >= 75:
     print("Final Grade: ", Fore.GREEN + pasado)
