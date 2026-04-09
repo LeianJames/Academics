@@ -23,7 +23,7 @@ Ranking = data.nlargest(5, "Final_Grade")                                      #
 # print(Ranking)
 
 subject_means = data[["Prelim", "Midterm", "Finals"]].mean()                   #--> Calculates the average for each Major Examination
-print(subject_means)
+# print(subject_means)
 
 bsit_passed = data[(data['Program'] == "BSIT") & (data["Status"] == "Passed")]  #--> Boolean Indexing to locate BSIT students who passed
 # print(bsit_passed)
